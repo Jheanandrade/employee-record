@@ -7,10 +7,15 @@ export default {
     {
       http: {
         method: 'put',
-        path: 'employee',
+        path: 'employee/{id}',
         request: {
           schema: {
             'application/json': schema
+          },
+          parameters:{
+            paths:{
+              id: true
+            }
           }
         }
       }

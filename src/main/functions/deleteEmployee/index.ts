@@ -6,7 +6,13 @@ export default {
     {
       http: {
         method: 'delete',
-        path: 'employee'
+        path: 'employee/{id}',
+        request:{
+          parameters:{
+            paths:{
+              id: true
+            }
+          }
       }
     }
   ],
