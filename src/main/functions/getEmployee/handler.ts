@@ -5,8 +5,8 @@ import { formatJSONResponse } from 'src/main/libs/apiGateway';
 
 const handler: ValidatedEventAPIGatewayProxyEvent<null> = async (event) => {
   const service = factoryGetEmployee()
-
-  const employeeResult = await service.execute({id: event.queryStringParameters.id})
+  console.log(event)
+  const employeeResult = await service.execute({id: event.pathParameters.id})
  
   return formatJSONResponse({
     message: `Record captured successfully`,
