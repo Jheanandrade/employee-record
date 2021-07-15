@@ -21,7 +21,6 @@ export default {
       }
     }
   ],
-  ,
   iamRoleStatements:[{
     Effect: 'Allow',
     Action: ["dynamodb:UpdateItem"],
