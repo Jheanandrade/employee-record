@@ -10,7 +10,7 @@ const create: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (event) 
 
   const service = factoryUpdateEmployee()
 
-  const _id = event.queryStringParameters.id
+  const _id = event.pathParameters.id
   const {name, age, role} = event.body
 
   const result = await service.execute({id: _id, name, age, role})
