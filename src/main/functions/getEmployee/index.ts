@@ -19,7 +19,7 @@ export default {
   ],
   iamRoleStatements:[{
     Effect: 'Allow',
-    Action: ['dynamodb:Scan'],
+    Action: ["dynamodb:Query"],
     Resource: 'arn:aws:dynamodb:us-east-1:*:table/employeeTable'
   }]
 }
