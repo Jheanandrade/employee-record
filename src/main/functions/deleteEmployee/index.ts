@@ -15,6 +15,7 @@ export default {
           }
       }
     }
+    }
   ],
   iamRoleStatements:[{
     Effect: 'Allow',
