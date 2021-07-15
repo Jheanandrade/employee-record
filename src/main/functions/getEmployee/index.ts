@@ -6,8 +6,20 @@ export default {
     {
       http: {
         method: 'get',
-        path: 'employee'
+        path: 'employee/{id}',
+        request:{
+            parameters:{
+              paths:{
+                id: true
+              }
+            }
+        }
       }
     }
-  ]
+  ],
+  iamRoleStatements:[{
+    Effect: 'Allow',
+    Action: ['dynamodb:Scan'],
+    Resource: 'arn:aws:dynamodb:us-east-1:*:table/employeeTable'
+  }]
 }

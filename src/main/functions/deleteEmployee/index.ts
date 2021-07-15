@@ -9,5 +9,10 @@ export default {
         path: 'employee'
       }
     }
-  ]
+  ],
+  iamRoleStatements:[{
+    Effect: 'Allow',
+    Action: ['dynamodb:DeleteItem'],
+    Resource: 'arn:aws:dynamodb:us-east-1:*:table/employeeTable'
+  }]
 }

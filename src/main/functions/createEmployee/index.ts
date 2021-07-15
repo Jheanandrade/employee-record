@@ -15,5 +15,10 @@ export default {
         }
       }
     }
-  ]
-}
+  ],
+  iamRoleStatements:[{
+     Effect: 'Allow',
+     Action: ['dynamodb:PutItem'],
+     Resource: 'arn:aws:dynamodb:us-east-1:*:table/employeeTable'
+   }]
+  }
