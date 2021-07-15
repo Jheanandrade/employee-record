@@ -6,7 +6,7 @@ import { formatJSONResponse } from 'src/main/libs/apiGateway';
 const handler: ValidatedEventAPIGatewayProxyEvent<null> = async (event) => {
   const service = factoryDeleteEmployee()
 
-  await service.execute({id: event.queryStringParameters.id})
+  await service.execute({id: event.pathParameters.id})
  
   return formatJSONResponse({
     message: `Record deleted successfully`
