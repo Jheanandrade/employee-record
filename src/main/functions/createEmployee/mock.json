@@ -1,0 +1,6 @@
+{
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": "{\"name\":\"john\",\"age\":22,\"role\":\"operario\"}"
+}

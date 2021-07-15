@@ -1,0 +1,7 @@
+{
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "queryStringParameters": {"id": "6fe5b200-e52f-11eb-9610-4f182f72b551"},
+  "body": "{\"name\":\"bento\",\"age\":70,\"role\":\"bico\"}"
+}
